@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
-// # Front-end Style Guide
 
 // ## Colors
-
-// ### Primary
-
 $main-blue: hsl(246, 80%, 60%);
 $bg-work: hsl(15, 100%, 70%);
 $bg-play: hsl(195, 74%, 62%);
@@ -13,15 +9,12 @@ $bg-exercise: hsl(145, 58%, 55%);
 $bg-social: hsl(264, 64%, 52%);
 $bg-self-care: hsl(43, 84%, 65%);
 
-// ### Neutral
-
 $very-dark-blue: hsl(226, 43%, 10%);
 $dark-blue: hsl(235, 46%, 20%);
 $desaturated-blue: hsl(235, 45%, 61%);
 $pale-blue: hsl(236, 100%, 87%);
 
 // ## Typography
-
 $font-size: 18px;
 $main-font: "Rubik", sans-serif;
 
@@ -33,4 +26,12 @@ $main-font: "Rubik", sans-serif;
 
 body {
   background-color: $very-dark-blue;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1.3rem;
+  margin: 4rem 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
