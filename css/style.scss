@@ -26,6 +26,7 @@ $main-font: "Rubik", sans-serif;
 
 body {
   background-color: $very-dark-blue;
+  font-family: $main-font;
 }
 
 .main-container {
@@ -34,4 +35,104 @@ body {
   grid-gap: 1.3rem;
   margin: 4rem 1.3rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  .card {
+    border-radius: 0.9rem;
+    background-color: $dark-blue;
+    min-height: 10rem;
+
+    .card-profile {
+      background-color: $main-blue;
+      border-radius: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1.6rem;
+
+      .card-profile_img {
+        border-radius: 50%;
+        border: 3px solid #fff;
+        display: block;
+        width: 4rem;
+        margin-right: 0.7rem;
+      }
+
+      .card-profile_heading {
+        color: $pale-blue;
+        font-size: 0.8rem;
+
+        h1 {
+          font-weight: 300;
+          font-size: 1.3rem;
+          color: #f5f6ff;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+
+    .card-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: $desaturated-blue;
+      margin: 1.4rem 0;
+
+      div:hover {
+        color: #f5f6ff;
+        cursor: pointer;
+      }
+
+      .selected {
+        color: #f5f6ff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .main-container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    /* grid-auto-rows: 240px; */
+    place-content: center;
+    margin: 0 auto;
+    padding: 0 10vw;
+  }
+
+  .card-responsive {
+    grid-row: 1 / span 2;
+  }
+
+  .card-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .card-profile_img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .card-profile_heading {
+    margin: 1rem 0;
+
+    h1 {
+      font-size: 2.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .card-time {
+    height: 35%;
+    padding: 1.6rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0;
+  }
 }
