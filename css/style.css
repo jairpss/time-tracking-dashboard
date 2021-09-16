@@ -83,6 +83,66 @@ body {
   color: #f5f6ff;
 }
 
+.main-container .card .card-data {
+  margin-top: 10%;
+  border-radius: 0.9rem;
+  background-color: #1c1f4a;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.main-container .card .card-data:hover {
+  background-color: #6f76c8;
+}
+
+.main-container .card .card-data .card-data_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .card .card-data .card-data_title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.main-container .card .card-data .card-data_title img {
+  cursor: pointer;
+}
+
+.main-container .card .card-data .card-data_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.3px;
+}
+
+.main-container .card .card-data .card-data_time .current-time {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.main-container .card .card-data .card-data_time .prev-time {
+  font-size: 0.8rem;
+  color: #bdc1ff;
+}
+
+.main-container .card .work {
+  background: url("../images/icon-work.svg") top -13px right 15px/25% no-repeat #ff8c66;
+}
+
 @media screen and (min-width: 570px) {
   .main-container {
     -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
@@ -139,6 +199,27 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 0;
+  }
+  .card-data {
+    margin-top: 15%;
+  }
+  .card-data .card-data_time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .card-data .card-data_time .current-time {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .card-data .card-data_time .prev-time {
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
