@@ -9,6 +9,7 @@
 body {
   background-color: #0f1424;
   font-family: "Rubik", sans-serif;
+  font-size: 18px;
 }
 
 .main-container {
@@ -110,6 +111,7 @@ body {
 .main-container .card .card-data .card-data_title h2 {
   font-size: 1rem;
   font-weight: 500;
+  color: #fff;
 }
 
 .main-container .card .card-data .card-data_title img {
@@ -130,17 +132,38 @@ body {
 }
 
 .main-container .card .card-data .card-data_time .current-time {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 200;
+  color: #fff;
 }
 
 .main-container .card .card-data .card-data_time .prev-time {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #bdc1ff;
 }
 
-.main-container .card .work {
+.main-container .card.work {
   background: url("../images/icon-work.svg") top -13px right 15px/25% no-repeat #ff8c66;
+}
+
+.main-container .card.play {
+  background: url("../images/icon-play.svg") top -13px right 15px/25% no-repeat #56c2e6;
+}
+
+.main-container .card.study {
+  background: url("../images/icon-study.svg") top -13px right 15px/25% no-repeat #ff5c7c;
+}
+
+.main-container .card.exercise {
+  background: url("../images/icon-exercise.svg") top -2px right 15px/25% no-repeat #4acf81;
+}
+
+.main-container .card.social {
+  background: url("../images/icon-social.svg") top -13px right 15px/20% no-repeat #7536d3;
+}
+
+.main-container .card.self-care {
+  background: url("../images/icon-self-care.svg") top -13px right 15px/20% no-repeat #f1c65b;
 }
 
 @media screen and (min-width: 570px) {

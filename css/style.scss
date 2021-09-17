@@ -27,6 +27,7 @@ $main-font: "Rubik", sans-serif;
 body {
   background-color: $very-dark-blue;
   font-family: $main-font;
+  font-size: $font-size;
 }
 
 .main-container {
@@ -106,6 +107,7 @@ body {
         h2 {
           font-size: 1rem;
           font-weight: 500;
+          color: #fff;
         }
         img {
           cursor: pointer;
@@ -119,20 +121,44 @@ body {
         margin-top: 0.3px;
 
         .current-time {
-          font-size: 1.8rem;
+          font-size: 2rem;
           font-weight: 200;
+          color: #fff;
         }
         .prev-time {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           color: $pale-blue;
         }
       }
     }
+  }
+  .card.work {
+    background: url("../images/icon-work.svg") top -13px right 15px / 25% no-repeat
+      $bg-work;
+  }
+  .card.play {
+    background: url("../images/icon-play.svg") top -13px right 15px / 25% no-repeat
+      $bg-play;
+  }
 
-    .work {
-      background: url("../images/icon-work.svg") top -13px right 15px / 25% no-repeat
-        $bg-work;
-    }
+  .card.study {
+    background: url("../images/icon-study.svg") top -13px right 15px / 25% no-repeat
+      $bg-study;
+  }
+
+  .card.exercise {
+    background: url("../images/icon-exercise.svg") top -2px right 15px / 25% no-repeat
+      $bg-exercise;
+  }
+
+  .card.social {
+    background: url("../images/icon-social.svg") top -13px right 15px / 20% no-repeat
+      $bg-social;
+  }
+
+  .card.self-care {
+    background: url("../images/icon-self-care.svg") top -13px right 15px / 20% no-repeat
+      $bg-self-care;
   }
 }
 
