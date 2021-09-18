@@ -13,7 +13,7 @@ fetch('./data.json')
 function addEvents() {
     document.querySelectorAll('.card-time > div').forEach((item, i) => {
       item.addEventListener('click', () => {
-        console.log("Clicked: " + item.id);
+        // console.log("Clicked: " + item.id);
         if (item.id !== document.querySelector('.selected').id)
           updateThings(item.id);
       });
